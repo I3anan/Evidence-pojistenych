@@ -13,6 +13,6 @@ public class EvidencePojistenychMain {
 
     public static void main(String[] args) {
         SpravaPojistenych spravaPojistenych = new SpravaPojistenych();
-        spravaPojistenych.Program();
+        spravaPojistenych.program();
     }
 }

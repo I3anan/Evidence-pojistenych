@@ -21,11 +21,11 @@ public class SpravaPojistenych {
     }
     
     //Hlavní cyklus
-    public void Program() {
-        VytiskniUvodniobrazovku();
+    public void program() {
+        vytiskniUvodniobrazovku();
         String volba = "";
         while (!volba.equals("4")) {
-            VytiskniAkce();
+            vytiskniAkce();
             volba = sc.nextLine();
             switch (volba) {
                 case "1":
@@ -45,13 +45,13 @@ public class SpravaPojistenych {
     }
     
     //Vytisknutí úvodní obrazovky
-    public void VytiskniUvodniobrazovku() {
+    public void vytiskniUvodniobrazovku() {
         System.out.println("-".repeat(29) + "\nEvidence pojištěných\n" + "-".repeat(29) + "\n");
 
     }
     
     //Vytisknutí akcí k výběru
-    public void VytiskniAkce() {
+    public void vytiskniAkce() {
         System.out.println("Vyberte si akci:\n"
                 + "1 - Přidat nového pojištěného\n"
                 + "2 - Vypsat všechny pojištěné\n"
@@ -113,7 +113,7 @@ public class SpravaPojistenych {
     
     //Čekání na reakci uživatele
     public void pockej() {
-        System.out.println("Pokračujte libovolnou klávesou...");
+        System.out.println("Pokračujte stisknutím klávesy Enter");
         sc.nextLine();
     }
 }
